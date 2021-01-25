@@ -15,7 +15,14 @@ public class Application {
 		UserService service = context.getBean(UserService.class);
 		
 		service.printUsername(102);
+	
 		
+	}
+	
+	public void DisplayMessage()
+	{
+		//added for 8AM changes
+	
 	}
 
 }
