@@ -10,11 +10,17 @@ import com.ashokit.service.UserService;
 public class Application {
 
 	public static void main(String[] args) {
+		//Changes for priority task no 102
+		String ApplicationName;
+		String bufferedReader;
+		
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
 		
 		UserService service = context.getBean(UserService.class);
 		
 		service.printUsername(102);
+		
+		System.out.println(service.getClass());
 	
 		
 	}
